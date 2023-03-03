@@ -1,0 +1,15 @@
+.detail-header {
+    background: #fff;
+    padding-bottom: 48px;
+    box-shadow: 0 1px 4px rgb(10 10 10 / 15%);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(24px/-2);
+    margin-left: calc(24px/-2);
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}

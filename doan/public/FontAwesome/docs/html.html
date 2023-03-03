@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<title>Hướng dẫn sử dụng Font Awesome 5.13.0</title>
+	<link href="./prism/prism.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/bootstrap.css"/>
+	<link rel="stylesheet" href="./css/docs.min.css"/>
+
+	<link href="../css/all.css" rel="stylesheet">
+	<script src="./js/all.js"></script>
+
+	<style>
+		#bd-docs-nav ul{
+			list-style:none;
+			padding-left:1em;
+		}
+		#bd-docs-nav ul ul{
+			padding-left:0.5em;
+			margin-left:0.5em;
+			border-left:1px dashed #ccc;
+		}
+		#bd-docs-nav li{
+			margin-top:10px;
+		}
+		#bd-docs-nav a{
+			font-size:1.2em;
+		}
+		pre[class*="language-"] code{
+			white-space:pre-wrap;
+		}
+		pre[class*="language-"]{
+			max-height:400px;
+		}
+		.svg-inline--fa{
+			box-sizing:initial;
+		}
+	</style>
+</head>
+<body>
+<header class="navbar navbar-dark flex-column flex-sm-row bd-navbar">
+	<h1 class="navbar-brand mr-0" style="flex-grow:1">THIẾT KẾ WEB</h1>
+	<div class="navbar-nav" style="flex-grow:5">
+		<span class="nav-item nav-link active w-100 text-center">HƯỚNG DẪN SỬ DỤNG FONT AWESOME 5.13.0</span>
+	</div>
+</header>
+<div class="container-fluid">
+	<div class="row ">
+		<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+			<form class="bd-search d-flex align-items-center">
+			<button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><i class="fas fa-bars fa-2x"></i></button>
+			</form>
+			<nav id="bd-docs-nav" class="bd-links collapse"></nav>
+		</div>
+		<div id ="content" class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5">
+
+			<h3 class="bd-title">Download Font Awesome</h3>
+				<p>Tải bản <b>5.13.0</b> <a href="https://use.fontawesome.com/releases/v5.13.0/fontawesome-free-5.13.0-web.zip" target="_blank" title="fontawesome-free-5.13.0-web.zip">tại đây</a>, hoặc tìm bản mới nhất tại trang chủ của <a href="https://fontawesome.com/" target="_blank" title="Font Awesome">Font Awesome</a> (lưu ý tải đúng bản dành cho web, không phải bản cho desktop).</p>
+				<p>Giải nén vào thư mục project hoặc tạo thư mục mới nằm trong thư mục project.</p>
+			<h3 class="bd-title">Sử dụng Font Awesome</h3>
+			<h4 class="bd-content-title">Web font</h3>
+			<p>Link file <b>all.css</b> (hoặc file <b>all.min.css</b> ) vào file html và dùng các thẻ <b>&lt;i&gt;</b> (hoặc thẻ <b>&lt;span&gt;</b> ) với class như sau:</p>
+			<ul>
+				<li>
+					<b>fas</b> fa-&lt;tên-của-icon&gt;: Dùng cho các icon được tô kín (<b>solid</b>) hoặc có viền đậm, phần lớn icon trong nhóm này đều free, một số phải trả phí.
+				</li>
+				<li>
+					<b>far</b> fa-&lt;tên-của-icon&gt;: Dùng cho các icon không tô (<b>regular</b>), phần lớn icon trong nhóm này đều phải trả phí, chỉ có một số ít free.
+				</li>
+				<li>
+					<b>fal</b> fa-&lt;tên-của-icon&gt;: Dùng cho các icon không tô và có viền mỏng hơn (<b>light</b>), tất cả icon trong nhóm này đều phải trả phí.
+				</li>
+				<li>
+					<b>fab</b> fa-&lt;tên-của-icon&gt;: Dùng cho các icon là logo của các thương hiệu nổi tiếng (<b>brands</b>), tất cả icon trong nhóm này đều free.
+				</li>
+			</ul>
+			<p class="alert alert-warning">
+			<i class="fas fa-exclamation-triangle"></i> Lưu ý: thư mục <b>/webfonts</b> và <b>/css</b> phải nằm trong cùng đường dẫn, và phải <b>kiểm tra lại đã link đúng đường dẫn tới all.css hay chưa</b>
+			</p>
+			<p>
+			Cách này chỉ sử dụng 2 thư mục <b>/webfonts</b> và <b>/css</b> nên các thư mục còn lại có thể xóa hoặc di chuyển đi chỗ khác cũng được.
+			</p>
+			<div class="code-hightlight language-markup line-numbers" data-line="2">
+				<script type="text/plain">
+<head>
+  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+  <i class="fas fa-user"></i> <!-- uses solid style -->
+  <i class="far fa-user"></i> <!-- uses regular style -->
+  <i class="fal fa-user"></i> <!-- uses light style -->
+  <!--brand icon-->
+  <i class="fab fa-github-square"></i> <!-- uses brands style -->
+</body>
+				</script>
+			</div>
+			<p class="alert alert-danger">
+			<i class="fas fa-exclamation-triangle"></i> Lưu ý: khi nộp bài vui lòng KHÔNG dùng đường dẫn bắt đầu bằng dấu "/"
+			</p>
+			<p>
+			Nếu không sử dụng hết các nhóm icon thì có thể link file css của từng nhóm muốn sử dụng vào cùng với file <b>fontawesome.css</b> (hoặc bản min của các file này)
+			</p>
+			<div class="code-hightlight language-markup line-numbers" data-line="3-5">
+				<script type="text/plain">
+<head>
+  <!-- Our project just needs Font Awesome Solid + Brands -->
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+</head>
+<body>
+  <i class="fas fa-user"></i> <!-- uses solid style -->
+  <i class="fab fa-github-square"></i> <!-- uses brand style -->
+</body>
+				</script>
+	</div>
+			<h4 class="bd-content-title">SVG + Javascript</h3>
+			<p>Tương tự như cách trên nhưng dùng file <b>all.js</b> (hoặc file <b>all.min.js</b>)</p>
+			<p>
+			Cách này chỉ sử dụng thư mục <b>/js</b> nên các thư mục còn lại có thể xóa hoặc di chuyển đi chỗ khác cũng được;
+			</p>
+			<div class="code-hightlight language-markup line-numbers" data-line="2">
+				<script type="text/plain">
+<head>
+	<tmptmptmpscript defer src="/your-path-to-fontawesome/js/all.js"></tmptmptmpscript> <!--load all styles -->
+</head>
+<body>
+  <i class="fas fa-user"></i> <!-- uses solid style -->
+  <i class="far fa-user"></i> <!-- uses regular style -->
+  <i class="fal fa-user"></i> <!-- uses light style -->
+  <!--brand icon-->
+  <i class="fab fa-github-square"></i> <!-- uses brands style -->
+</body>
+				</script>
+			</div>
+			<p>
+			Nếu không sử dụng hết các nhóm icon thì có thể link file js của từng nhóm muốn sử dụng vào cùng với file <b>fontawesome.js</b> (hoặc bản min), lưu ý file <b>fontawesome.js</b> nên để sau các file js của từng nhóm.
+			</p>
+			<div class="code-hightlight language-markup line-numbers" data-line="3-5">
+				<script type="text/plain">
+<head>
+  <!-- Our project just needs Font Awesome Solid + Brands -->
+  <tmptmptmpscript defer src="/your-path-to-fontawesome/js/brands.js"></tmptmptmpscript>
+  <tmptmptmpscript defer src="/your-path-to-fontawesome/js/solid.js"></tmptmptmpscript>
+  <tmptmptmpscript defer src="/your-path-to-fontawesome/js/fontawesome.js"></tmptmptmpscript>
+</head>
+<body>
+  <i class="fas fa-user"></i> <!-- uses solid style -->
+  <i class="fab fa-github-square"></i> <!-- uses brand style -->
+</body>
+				</script>
+			</div>
+			<h4 class="bd-content-title">Ví dụ</h4>
+			<div class="code-hightlight language-markup keep-content" data-line="5">
+<i class="fas fa-hourglass"></i>
+<i class="fas fa-hourglass-start"></i>
+<i class="fas fa-hourglass-half"></i>
+<i class="fas fa-hourglass-end"></i>
+<i class="far fa-hourglass"></i> <!-- lưu ý class far -->
+			</div>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fas fa-home"></i>
+<i class="fas fa-shopping-bag"></i>
+<i class="fas fa-shopping-cart"></i>
+<i class="fas fa-user-cog"></i>
+<i class="fas fa-sign-out-alt"></i>
+			</div>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fas fa-play"></i>
+<i class="fas fa-pause"></i>
+<i class="fas fa-stop"></i>
+<i class="fas fa-step-backward"></i>
+<i class="fas fa-fast-backward"></i>
+<i class="fas fa-step-forward"></i>
+<i class="fas fa-fast-forward"></i>
+			</div>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter-square"></i>
+<i class="fab fa-pinterest-square"></i>
+<i class="fab fa-google-plus-square"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-windows"></i>
+<i class="fab fa-android"></i>
+<i class="fab fa-linux"></i>
+<i class="fab fa-apple"></i>
+			</div>
+			<p>Sử dụng trên 1 dòng chữ</p>
+			<div class="code-hightlight language-markup keep-content">
+I have a <i class="fas fa-pen"></i><br/>
+I have an <i class="fas fa-apple-alt"></i>
+			</div>
+			<p>Kết hợp với Bootstrap</p>
+			<div class="code-hightlight language-markup keep-content">
+<a class="btn btn-primary btn-lg" href="#" role="button">
+	<i class="fas fa-home"></i> Home
+</a>
+<button class="btn btn-success  btn-lg" type="submit">
+	<i class="fas fa-check"></i> OK
+</button>
+<a class="btn btn-danger btn-lg" href="#" role="button">
+	<i class="fas fa-ban"></i> Cancel
+</a>
+			</div>
+			<h3 class="bd-title">Các chức năng cơ bản</h3>
+			<h4 class="bd-content-title">Chỉnh kích thước icon</h4>
+			<p> Có thể chỉnh kích thước bằng thuộc tính font-size nhưng không nên dùng cách này mà nên dùng các class có sẵn:</p>
+			<ul>
+				<li>
+					<b>fa-xs</b>: 0.75em
+				</li>
+				<li>
+					<b>fa-sm</b>: .875em
+				</li>
+				<li>
+					<b>fa-lg</b>: 1.33em (kèm theo vertical-align: -25%)
+				</li>
+				<li>
+					<b>fa-2x</b> đến <b>fa-10x</b>: 2em đến 10em
+				</li>
+			</ul>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fas fa-cat fa-xs"></i>
+<i class="fas fa-cat fa-sm"></i>
+<i class="fas fa-cat"></i>
+<i class="fas fa-cat fa-lg"></i>
+<i class="fas fa-cat fa-2x"></i>
+<i class="fas fa-cat fa-3x"></i>
+<i class="fas fa-cat fa-4x"></i>
+<i class="fas fa-cat fa-5x"></i>
+<i class="fas fa-cat fa-6x"></i>
+<i class="fas fa-cat fa-7x"></i>
+<i class="fas fa-cat fa-8x"></i>
+<i class="fas fa-cat fa-9x"></i>
+<i class="fas fa-cat fa-10x"></i>
+			</div>
+			<p>Kết hợp với font-size của thẻ bên ngoài (quan sát vertical-align của fa-lg)</p>
+			<div class="code-hightlight language-markup keep-content">
+<span style="font-size:5em;">
+	<i class="fas fa-cat fa-xs" style="background: #faa"></i>
+	<i class="fas fa-cat fa-sm" style="background: #faa"></i>
+	<i class="fas fa-cat" style="background: #faa"></i>
+	<i class="fas fa-cat fa-lg" style="background: #faa"></i>
+	<i class="fas fa-cat fa-2x" style="background: #faa"></i>
+</span>
+			</div>
+			<h4 class="bd-content-title">Chỉnh chiều rộng bằng nhau</h4>
+			<p>Dùng class <b>fa-fw</b></p>
+			<p>Before:</p>
+			<div class="code-hightlight language-markup keep-content">
+<span style="font-size:3em;">
+	<i class="fas fa-home" style="background: #faa"></i> Home<br/>
+	<i class="fas fa-shopping-bag" style="background: #faa"></i> Buy<br/>
+	<i class="fas fa-shopping-cart" style="background: #faa"></i> Cart<br/>
+	<i class="fas fa-user-cog" style="background: #faa"></i> Account<br/>
+	<i class="fas fa-sign-out-alt" style="background: #faa"></i> Log out<br/>
+</span>
+			</div>
+			<p>After:</p>
+			<div class="code-hightlight language-markup keep-content">
+<span style="font-size:3em;">
+	<i class="fas fa-home fa-fw" style="background: #faa"></i> Home<br/>
+	<i class="fas fa-shopping-bag fa-fw" style="background: #faa"></i> Buy<br/>
+	<i class="fas fa-shopping-cart fa-fw" style="background: #faa"></i> Cart<br/>
+	<i class="fas fa-user-cog fa-fw" style="background: #faa"></i> Account<br/>
+	<i class="fas fa-sign-out-alt fa-fw" style="background: #faa"></i> Log out<br/>
+</span>
+			</div>
+			<h4 class="bd-content-title">Sử dụng với &lt;ul&gt; (hoặc &lt;ol&gt;)</h4>
+			<p>Dùng class <b>fa-ul</b> cho thẻ &lt;ul&gt; (hoặc &lt;ol&gt;) và <b>fa-li</b> cho 1 thẻ &lt;span&gt; nằm trong thẻ &lt;li&gt; </p>
+			<div class="code-hightlight language-markup keep-content">
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-arrow-up"></i></span> W</li>
+  <li><span class="fa-li"><i class="fas fa-arrow-down"></i></span> S</li>
+  <li><span class="fa-li"><i class="fas fa-arrow-left"></i></span> A</li>
+  <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span> D</li>
+</ul>
+			</div>
+			<h4 class="bd-content-title">Xoay icon</h4>
+			<p>Dùng các class <b>fa-rotate-90</b>, <b>fa-rotate-180</b>, <b>fa-rotate-270</b> để xoay:</p>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fab fa-twitter fa-5x"></i>
+<i class="fab fa-twitter fa-5x fa-rotate-90"></i>
+<i class="fab fa-twitter fa-5x fa-rotate-180"></i>
+<i class="fab fa-twitter fa-5x fa-rotate-270"></i>
+			</div>
+			<p>Dùng các class <b>fa-flip-horizontal</b>, <b>fa-flip-vertical</b>, <b>fa-flip-both</b> để lật:</p>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fab fa-twitter fa-5x"></i>
+<i class="fab fa-twitter fa-5x fa-flip-horizontal"></i>
+<i class="fab fa-twitter fa-5x fa-flip-vertical"></i>
+<i class="fab fa-twitter fa-5x fa-flip-both"></i>
+<i class="fab fa-twitter fa-5x fa-flip-horizontal fa-flip-vertical"></i>
+<i class="fab fa-twitter fa-5x fa-rotate-180"></i>
+			</div>
+			<p class="alert alert-info">
+			<i class="fas fa-glasses"></i> Nhận xét: <b>fa-flip-both</b> tương đương dùng chung <b>fa-flip-horizontal</b> và <b>fa-flip-vertical</b> hoặc <b>fa-rotate-180</b>.
+			</p>
+			<p>Nếu muốn các góc khác có thể dùng thuộc tính transform cùa CSS:</p>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fab fa-twitter fa-5x"></i>
+<i class="fab fa-twitter fa-5x" style="transform:rotate(-30deg);"></i>
+<i class="fab fa-twitter fa-5x" style="transform:rotate(30deg);"></i>
+<i class="fab fa-twitter fa-5x" style="transform:rotate(120deg);"></i>
+			</div>
+			<h4 class="bd-content-title">Quay icon (animation)</h4>
+			<p>Dùng class <b>fa-spin</b> để quay liên tục:</p>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fas fa-spinner fa-5x fa-spin"></i>
+<i class="fas fa-circle-notch fa-5x fa-spin"></i>
+<i class="fas fa-sync fa-5x fa-spin"></i>
+<i class="fas fa-cog fa-5x fa-spin"></i>
+<i class="fas fa-arrow-circle-right fa-5x fa-spin"></i>
+			</div>
+			<p>Dùng class <b>fa-pulse</b> để quay theo từng nhịp (1/8 vòng):</p>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fas fa-spinner fa-5x fa-pulse"></i>
+<i class="fas fa-arrow-circle-right fa-5x fa-pulse"></i>
+			</div>
+			<h4 class="bd-content-title">Float</h4>
+			<p>Dùng class <b>fa-pull-left</b> và <b>fa-pull-right</b>:</p>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fas fa-quote-left fa-2x fa-pull-left"></i>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique leo id lectus varius varius. Sed a lacinia ante. Etiam rhoncus cursus felis, eget ultrices tellus. Nunc ut euismod dolor. Sed in nulla sit amet diam pretium sollicitudin. Integer cursus velit urna, eu sagittis metus dignissim a. Quisque consequat sodales nibh, id posuere nisi accumsan nec. Nullam non feugiat odio, quis vestibulum quam. Phasellus id placerat augue, eu scelerisque libero. Phasellus vel imperdiet ipsum.
+<i class="fas fa-quote-right fa-2x fa-pull-right"></i>
+			</div>
+			<h4 class="bd-content-title">Border</h4>
+			<p>Dùng class <b>fa-border</b>:</p>
+			<div class="code-hightlight language-markup keep-content">
+<i class="fas fa-minus fa-2x fa-border"></i>
+<i class="far fa-window-restore fa-2x fa-border"></i>
+<i class="fas fa-times fa-2x fa-border"></i>
+			</div>
+			<p class="alert alert-danger">
+			<i class="fas fa-exclamation-triangle"></i> Compatibility: Khi dùng <b>fa-border</b> chung với Bootstrap thì phải thêm đoạn CSS sau:
+			</p>
+			<div class="code-hightlight language-css">
+.svg-inline--fa{
+	box-sizing:initial;
+}
+			</div>
+			<h4 class="bd-content-title">Kết hợp nhiều icon lại với nhau
+			</h4>
+			<p>Dùng class <b>fa-stack</b> cho thẻ ngoài và các class <b>fa-stack-1x</b>, <b>fa-stack-2x</b> cho các thẻ trong (có thể kết hợp thêm class <b>fa-inverse</b> hoặc các phép transformation khác nếu cần):</p>
+			<div class="code-hightlight language-markup keep-content">
+<span class="fa-stack fa-2x">
+  <i class="fas fa-square fa-stack-2x"></i>
+  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+</span>	
+<span class="fa-stack fa-2x">
+  <i class="fas fa-camera fa-stack-1x"></i>
+  <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+</span>
+<span class="fa-stack fa-2x">
+  <i class="fas fa-dog fa-stack-1x"></i>
+  <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+</span>
+<span class="fa-stack fa-5x">
+  <i class="fas fa-cloud-showers-heavy fa-stack-2x"></i>
+  <i class="fas fa-bolt fa-stack-1x fa-inverse" style="transform:translate(0, -10%) rotate(25deg);"></i>
+</span>
+			</div>			
+			<h3 class="bd-title">Các chức năng nâng cao</h3>
+			<p class="alert alert-warning">
+			<i class="fas fa-exclamation-triangle"></i> Lưu ý: các chức năng này chỉ dùng được với <b>SVG + Javascript</b>, không dùng được với CSS + webfonts. 
+			</p>
+			<h4 class="bd-content-title">Scaling</h4>
+			<h4 class="bd-content-title">Positioning</h4>
+			<h4 class="bd-content-title">Rotating &amp; Flipping</h4>
+			<h4 class="bd-content-title">Masking</h4>
+			<h4 class="bd-content-title">Layering, Text, & Counters</h4>
+		</div>
+	</div>
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script>
+		var tmp=$('<textarea></textarea>');
+		$('.code-hightlight').each(function(){
+			var ele=$(this);
+			var html='';
+			if(ele.children().first().prop('tagName')==="SCRIPT"){
+				html=ele.children().first().html().replace(/tmptmptmpscript/g,'script');
+			}
+			else{
+				html=ele.html();
+			}
+			html=html.trim();
+			tmp[0].textContent=html;
+			html=tmp[0].innerHTML;
+			var cls=ele.attr('class').replace(/(code-hightlight)|(keep-content)/g,'');
+			html=$('<pre class="'+cls+'"><code>'+html+'</code></pre>');
+			$.each(ele.prop('attributes'),function() {
+				html.attr(this.name, this.value);
+			});
+			if(ele.hasClass('keep-content')){
+				ele.after(html);
+			}
+			else{
+				ele.replaceWith(html);
+			}
+		});
+		var ul3=$('<ul></ul>');
+		$('h3.bd-title').each(function(index3){
+			var h3=$(this);
+			var id3='h3-'+(1+index3);
+			h3.attr('id',id3);
+			var li3=$('<li></li>');
+			li3.append('<a href="#'+id3+'">'+h3.html()+'</a>');
+			var sub=h3.nextUntil('h3.bd-title','h4.bd-content-title');
+			if(sub.length){
+				var ul4=$('<ul></ul>');
+				sub.each(function(index4){
+					var h4=$(this);
+					var id4='h4-'+(1+index3)+'-'+(1+index4);
+					h4.attr('id',id4);
+					var li4=$('<li></li>');
+					li4.append('<a href="#'+id4+'">'+h4.html()+'</a>');
+					ul4.append(li4);
+				});
+				li3.append(ul4);
+			}
+			ul3.append(li3);
+		})
+		$('#bd-docs-nav').append(ul3);
+	</script>
+	<script src="./prism/prism.js"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/docs.min.js"></script>
+</div>
+</body>
+</html>

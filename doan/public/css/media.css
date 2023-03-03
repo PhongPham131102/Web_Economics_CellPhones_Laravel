@@ -1,0 +1,18 @@
+
+@media (min-width: 1620px){
+    .homepage .banner-under-slider {
+        min-height: 140px;
+    }
+}
+@media screen and (min-width: 40em){
+    .wrapper-left {
+        width: 50%;
+        margin-bottom: 20px;
+    }    
+}
+@media (min-width: 992px)
+{
+    .col-md-12 {
+        width: 100%;
+    }
+}

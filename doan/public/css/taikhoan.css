@@ -1,0 +1,117 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    min-width: 1200px;
+    margin: 20px 160px;
+}
+.profile .left-col {
+    width: 253px;
+    background-color: #f6fbfc;
+    border-radius: 5px;
+}
+.profile .left-col .block-menu {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f6fbfc;
+    top: 74px;
+    position: sticky;
+}
+.profile .left-col .block-menu {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f6fbfc;
+    top: 74px;
+    position: sticky;
+}
+.profile .left-col .block-menu .item {
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 0.5px 10px;
+}
+.profile .left-col .block-menu .item .check .item-menu-active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0.5px solid #e11b1e;
+    background-color: #fee;
+    margin-bottom: 15px;
+}
+.profile .left-col .block-menu .item .check .item-menu-active span {
+    font-size: 15px;
+    margin: 0 0 0 10px;
+    color: #fd2424;
+    font-weight: 600;
+}
+.profile .right-col {
+    width: 927px;
+    margin-left: 18px;
+    height: 550px;
+}
+.profile .right-col .user-info-page {
+    /* height: 1000px; */
+    margin: 0px 163.5px;
+    width: 600px;
+}
+.profile .right-col .user-info-page .user-info-avatar {
+    width: fit-content;
+    margin: 30px 260px 0;
+}
+.profile .right-col .user-info-page .user-info-avatar .avatar-img {
+    width: 80px;
+    height: 80px;
+}
+.profile .right-col .user-info-name {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.profile .right-col .form-group {
+    position: relative;
+    margin-top: 30px;
+    width: 600px;
+    height: 40px;
+    margin-left: 160px;
+}
+.profile .right-col .form-group .field {
+    position: relative;
+    margin-top: 15px;
+}
+.profile .right-col .form-group .field .group-item {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #444b52;
+    border-radius: 3px;
+}
+.profile .right-col .form-group .field label::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    transition: all .3s;
+}
+.profile .right-col .form-group .btn-form-submit {
+    cursor: pointer;
+    display: block;
+    width: 600px;
+    background: #ff9f00;
+    border: 0.5px solid hsla(0, 0%, 46.7%, .5);
+    box-shadow: 0 4px 4px rgb(255 0 0 / 20%);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 11px 0;
+    margin-top: 20px 0 0 160px;
+}
